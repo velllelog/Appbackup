@@ -33,13 +33,13 @@ public class SignUpOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_one);
 
-        nameInputLayout = findViewById(R.id.nameInputLayoutStudent);
-        phoneInputLayout = findViewById(R.id.phoneInputLayoutStudent);
-        gradeInputLayout = findViewById(R.id.GradeInputLayoutStudent);
-        subjectInputLayout=findViewById(R.id.subjectInputLayoutStudent);
-        feeInputLayout=findViewById(R.id.feeInputLayoutStudent);
+        nameInputLayout = findViewById(R.id.nameInputLayout);
+        phoneInputLayout = findViewById(R.id.phoneInputLayout);
+        gradeInputLayout = findViewById(R.id.gradeInputLayout);
+        subjectInputLayout=findViewById(R.id.subjectInputLayout);
+        feeInputLayout=findViewById(R.id.feeInputLayout);
 
-        menu = findViewById(R.id.menu_location_student);
+        menu = findViewById(R.id.menu_location);
         dropdown_menu = findViewById(R.id.dropdown_menu);
 
         ccp = findViewById(R.id.ccp);

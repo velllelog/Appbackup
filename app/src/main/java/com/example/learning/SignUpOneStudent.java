@@ -31,25 +31,24 @@ public class SignUpOneStudent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up_one);
+        setContentView(R.layout.activity_sign_up_one_student);
 
-        nameInputLayout = findViewById(R.id.nameInputLayoutStudent);
-        phoneInputLayout = findViewById(R.id.phoneInputLayoutStudent);
+        nameInputLayout = findViewById(R.id.nameInputLayoutstudent);
+        phoneInputLayout = findViewById(R.id.phoneInputLayoutstudent);
         GradeInputLayout = findViewById(R.id.GradeInputLayoutStudent);
 
-        menu = findViewById(R.id.menu_location_student);
-        dropdown_menu = findViewById(R.id.dropdown_menu);
+        menu = findViewById(R.id.menu_locationstudent);
+        dropdown_menu = findViewById(R.id.dropdown_menustudent);
 
         ccp = findViewById(R.id.ccp);
         ccp.registerCarrierNumberEditText(phoneInputLayout.getEditText());
 
         tapLogin = findViewById(R.id.tapLogin);
-
         btnSignUpStudent = findViewById(R.id.btnNext);
         //drop down menu items
         String[] Location = {"Delhi", "Mumbai", "Kolkata", "Bengaluru", "Hyderabad", "Chennai", "Pune"};
-        ArrayAdapter<String> LocationAdapterStudent = new ArrayAdapter<>(SignUpOneStudent.this, R.layout.drop_down_list,Location);
-        dropdown_menu.setAdapter(LocationAdapterStudent);
+        ArrayAdapter<String> LocationAdapter = new ArrayAdapter<>(SignUpOneStudent.this, R.layout.drop_down_list,Location);
+        dropdown_menu.setAdapter(LocationAdapter);
 
         btnSignUpStudent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,7 +76,7 @@ public class SignUpOneStudent extends AppCompatActivity {
         dropdown_menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                selectedLocation = LocationAdapterStudent.getItem(i);
+                selectedLocation = LocationAdapter.getItem(i);
             }
         });
 

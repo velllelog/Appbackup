@@ -13,7 +13,7 @@
 
 
         <TextView
-            android:id="@+id/SignUpTV"
+            android:id="@+id/moredetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/nameInputLayoutStudent"
+            android:id="@+id/nameInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="250dp"
             android:layout_height="50dp"
@@ -43,13 +43,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.614"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/phoneInputLayoutStudent">
+            app:layout_constraintTop_toBottomOf="@id/phoneInputLayout">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/nameEditText"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:nextFocusForward="@id/classInputLayout"
+                android:nextFocusForward="@id/gradeInputLayout"
                 android:singleLine="true"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -60,13 +60,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toStartOf="@+id/phoneInputLayoutStudent"
+            app:layout_constraintEnd_toStartOf="@+id/phoneInputLayout"
             app:layout_constraintHorizontal_bias="0.571"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/SignUpTV" />
+            app:layout_constraintTop_toBottomOf="@+id/moredetail" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/phoneInputLayoutStudent"
+            android:id="@+id/phoneInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="200dp"
             android:layout_height="50dp"
@@ -79,20 +79,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.706"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/SignUpTV">
+            app:layout_constraintTop_toBottomOf="@id/moredetail">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/phoneEditText"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:nextFocusForward="@id/nameInputLayoutStudent"
+                android:nextFocusForward="@id/nameInputLayout"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/classInputLayout"
+            android:id="@+id/gradeInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
@@ -106,44 +106,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.614"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/nameInputLayoutStudent">
+            app:layout_constraintTop_toBottomOf="@id/nameInputLayout">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/classEditText"
+                android:id="@+id/gradeEditText"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:nextFocusForward="@id/GradeInputLayoutStudent"
+                android:nextFocusForward="@id/menu_location"
                 android:singleLine="true"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/GradeInputLayoutStudent"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="@string/grade"
-            android:textColorHint="@color/black"
-            app:boxCornerRadiusBottomEnd="8dp"
-            app:boxStrokeColor="@color/black"
-            app:endIconMode="clear_text"
-            app:endIconTint="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.614"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/classInputLayout">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/GradeEditText"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionDone"
-                android:inputType="number"
-                android:singleLine="true"
-                android:textColor="@color/black" />
-        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/tapLogin"
@@ -156,8 +129,9 @@
             android:text="@string/logined_before"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/feeInputLayoutStudent" />
+            app:layout_constraintTop_toBottomOf="@+id/feeInputLayout" />
 
         <Button
             android:id="@+id/btnNext"
@@ -174,7 +148,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tapLogin" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/menu_location_student"
+            android:id="@+id/menu_location"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="300dp"
             android:layout_height="100dp"
@@ -184,7 +158,7 @@
             app:boxStrokeColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/GradeInputLayoutStudent">
+            app:layout_constraintTop_toBottomOf="@+id/gradeInputLayout">
 
             <AutoCompleteTextView
                 android:id="@+id/dropdown_menu"
@@ -197,7 +171,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/subjectInputLayoutStudent"
+            android:id="@+id/subjectInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
@@ -210,38 +184,40 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.614"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/menu_location_student">
+            app:layout_constraintTop_toBottomOf="@id/menu_location">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/subjectEditText"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:nextFocusForward="@id/classInputLayout"
+                android:nextFocusForward="@id/feeInputLayout"
                 android:singleLine="true"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/feeInputLayoutStudent"
+            android:id="@+id/feeInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Fees"
+            android:hint="@string/fee"
             android:textColorHint="@color/black"
+            app:boxCornerRadiusBottomEnd="8dp"
             app:boxStrokeColor="@color/black"
             app:endIconMode="clear_text"
             app:endIconTint="@color/black"
-            app:layout_constraintEnd_toEndOf="@+id/subjectInputLayoutStudent"
-            app:layout_constraintStart_toStartOf="@+id/subjectInputLayoutStudent"
-            app:layout_constraintTop_toBottomOf="@id/subjectInputLayoutStudent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subjectInputLayout">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/feeEditText"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:nextFocusForward="@id/nameInputLayoutStudent"
+                android:nextFocusForward="@id/btnNext"
+                android:singleLine="true"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 

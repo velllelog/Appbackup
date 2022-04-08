@@ -20,7 +20,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/phoneInputLayoutStudent"
+        android:id="@+id/phoneInputLayoutstudent"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@id/loginTV">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/phoneEditText"
+            android:id="@+id/phoneEditTextstudent"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:imeOptions="actionDone"
@@ -52,7 +52,7 @@
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/phoneInputLayoutStudent"
+        app:layout_constraintEnd_toStartOf="@+id/phoneInputLayoutstudent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginTV" />
@@ -81,5 +81,5 @@
         android:text="@string/taptosignup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneInputLayoutStudent" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneInputLayoutstudent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

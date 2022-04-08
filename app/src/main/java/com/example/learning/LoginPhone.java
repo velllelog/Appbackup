@@ -38,7 +38,7 @@ public class LoginPhone extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_phone);
 
-        phoneInputLayout = findViewById(R.id.phoneInputLayoutStudent);
+        phoneInputLayout = findViewById(R.id.phoneInputLayoutstudent);
         btnNext = findViewById(R.id.btnNext);
         tapSignUp = findViewById(R.id.tapSignUp);
 

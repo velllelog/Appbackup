@@ -7,14 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUpTwo extends AppCompatActivity {
@@ -25,6 +23,7 @@ public class SignUpTwo extends AppCompatActivity {
 
     FirebaseAuth auth;
     FirebaseDatabase rootNode;
+    DatabaseReference databaseReference;
 
     public String phone,name,grade,location,subject,fee,description;
 
@@ -37,7 +36,7 @@ public class SignUpTwo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_two);
 
-        descriptionInputLayout = findViewById(R.id.descriptionInputLayoutStudent);
+        descriptionInputLayout = findViewById(R.id.descriptionInputLayout);
         tapLogin = findViewById(R.id.tapLogin);
 
         btnNext = findViewById(R.id.btnNext);
@@ -45,6 +44,7 @@ public class SignUpTwo extends AppCompatActivity {
         //firebase
         auth = FirebaseAuth.getInstance();
         rootNode = FirebaseDatabase.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://fire-connection-dc9f0-default-rtdb.firebaseio.com/");
 
         //getValues
         Intent intent = getIntent();

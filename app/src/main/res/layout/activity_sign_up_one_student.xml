@@ -14,7 +14,7 @@
 
 
         <TextView
-            android:id="@+id/SignUpTV"
+            android:id="@+id/moredetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="168dp"
@@ -31,7 +31,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/nameInputLayoutStudent"
+            android:id="@+id/nameInputLayoutstudent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
@@ -45,13 +45,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.614"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/phoneInputLayoutStudent">
+            app:layout_constraintTop_toBottomOf="@id/phoneInputLayoutstudent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nameEditText"
+                android:id="@+id/nameEditTextstudent"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:nextFocusForward="@id/classInputLayout"
+                android:nextFocusForward="@id/gradeInputLayout"
                 android:singleLine="true"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -62,13 +62,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="28dp"
-            app:layout_constraintEnd_toStartOf="@+id/phoneInputLayoutStudent"
+            app:layout_constraintEnd_toStartOf="@+id/phoneInputLayoutstudent"
             app:layout_constraintHorizontal_bias="0.571"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/SignUpTV" />
+            app:layout_constraintTop_toBottomOf="@+id/moredetail" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/phoneInputLayoutStudent"
+            android:id="@+id/phoneInputLayoutstudent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
@@ -81,14 +81,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.706"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/SignUpTV">
+            app:layout_constraintTop_toBottomOf="@id/moredetail">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/phoneEditText"
+                android:id="@+id/phoneEditTextstudent"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:nextFocusForward="@id/nameInputLayoutStudent"
+                android:nextFocusForward="@id/nameInputLayoutstudent"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,17 +107,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.614"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameInputLayoutStudent">
+            app:layout_constraintTop_toBottomOf="@+id/nameInputLayoutstudent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/GradeEditText"
+                android:id="@+id/GradeEditTextstudent"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:singleLine="true"
                 android:textColor="@color/black"
-                android:nextFocusForward="@id/menu_location_student"/>
+                android:nextFocusForward="@id/menu_locationstudent"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -131,7 +131,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.583"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/menu_location_student" />
+            app:layout_constraintTop_toBottomOf="@+id/menu_locationstudent" />
 
         <Button
             android:id="@+id/btnSignUpStudent"
@@ -148,12 +148,12 @@
             app:layout_constraintTop_toBottomOf="@+id/tapLogin" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/menu_location_student"
+            android:id="@+id/menu_locationstudent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:background="@color/white"
-            android:hint="Location"
+            android:hint="@string/location"
             android:padding="20dp"
             app:boxStrokeColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -161,7 +161,7 @@
             app:layout_constraintTop_toBottomOf="@id/GradeInputLayoutStudent">
 
             <AutoCompleteTextView
-                android:id="@+id/dropdown_menu"
+                android:id="@+id/dropdown_menustudent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:imeOptions="actionDone"

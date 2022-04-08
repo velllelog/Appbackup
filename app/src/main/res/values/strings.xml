@@ -20,4 +20,9 @@
     <string name="logined_before">logined before??</string>
     <string name="class_signUpOne">class</string>
     <string name="write_a_description_about_yourself">Write A description about yourself</string>
+    <string name="teacher_or_coaching">Teacher or coaching</string>
+    <string name="fee">fee</string>
+    <string name="moredetail">moreDetail</string>
+    <string name="send_otp">send_otp</string>
+    <string name="location">Location</string>
 </resources>
