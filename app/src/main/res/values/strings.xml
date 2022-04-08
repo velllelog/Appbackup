@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Learning</string>
+    <string name="login">login</string>
+    <string name="signup">signup</string>
+    <string name="onleaner">OnLeaner</string>
+    <string name="phone_number">phone_number</string>
+    <string name="nosignup">noSignUp</string>
+    <string name="next">next</string>
+    <string name="taptosignup">Tap to SignUp</string>
+    <string name="enter_your_otp_here">enter_your_otp_here</string>
+    <string name="resendotp">resendOTP</string>
+    <string name="name">name</string>
+    <string name="age">age</string>
+    <string name="nologin">noLogin</string>
+    <string name="gender">gender</string>
+    <string name="sample">sample</string>
+    <string name="student">Student</string>
+    <string name="teacherorcoaching">TeacherOrCoaching</string>
+    <string name="grade">Grade</string>
+    <string name="logined_before">logined before??</string>
+    <string name="class_signUpOne">class</string>
+    <string name="write_a_description_about_yourself">Write A description about yourself</string>
+</resources>

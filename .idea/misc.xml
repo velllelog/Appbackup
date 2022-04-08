@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_choose_category.xml" value="0.3234375" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_drop_down_list.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_home.xml" value="0.3234375" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_login_or_sign_up.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_login_otp.xml" value="0.1" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_login_phone.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_main.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_profiles.xml" value="0.3234375" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_sign_up_one.xml" value="0.33" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_sign_up_one_student.xml" value="0.33" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_sign_up_otp.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_sign_up_otpstudent.xml" value="0.3234375" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/activity_sign_up_two.xml" value="0.33" />
+        <entry key="..\:/Users/mahes/AndroidStudioProjects/Learning/app/src/main/res/layout/drop_down_list.xml" value="0.3234375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
